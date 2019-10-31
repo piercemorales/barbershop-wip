@@ -1,0 +1,432 @@
+html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}button,html [type=button],[type=reset],[type=submit]{-webkit-appearance:button}button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details,menu{display:block}summary{display:list-item}canvas{display:inline-block}template{display:none}[hidden]{display:none}
+
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
+
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+
+
+
+
+/* STYLING NEEDSSSSSSS*/
+
+$primary:#090707; 
+$secondary:#FFFFF8;
+
+
+// GENERAL STYLING //
+
+body {
+	font-family: 'Montserrat', 'sans-serif';
+	color: #323232;
+	background-color: #FFFFF8;
+
+}
+h1 {
+	font-size: 40px;
+}
+ul, li,
+h1, h2, 
+h3, h4, 
+h5, h6,
+figure,
+p {
+  padding: 0;
+  margin: 0;
+} 
+
+img {
+	max-width: 100%;
+}
+
+li {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+a {
+	color: $primary;
+	font-weight: 700;
+}
+
+h2 {
+	text-transform: uppercase;
+}
+/*/ -------------------HEADER------------------ /*/
+.site-header {
+	position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(255,255,245,0.5);
+    transition: 0.5s ease;
+	&:hover {
+		background: rgba(255,255,245,0.8);
+	}
+}
+.header-wrapper {
+	max-width: 100%;
+	margin: 15px 10px;
+	position: relative;
+
+}
+.horizontal,
+ {
+	max-width: 80%;
+	margin: 0 auto;
+	display: flex;
+	max-width: 80%;
+	justify-content: space-between;
+
+}
+
+
+.main-nav a {
+	color:#323232;
+	transition:0.3s ease;
+	&:hover {
+		color:#929292;
+
+	}
+}
+
+
+// END OF HEADING 
+
+.mainheader,
+.shophours,
+.customerReviews {
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	color:white;
+	background-attachment: fixed;
+
+}
+// BEGINNING OF HEADER
+.barberlogo img {
+	max-width: 180px;
+	min-width: 180px;
+	flex-shrink:0;
+}
+
+
+.flexcontainer {
+	margin: 0 auto;
+	// overflow: hidden;
+	width: 100%;
+
+}
+
+.horizontal nav ul {
+	display: flex;
+	justify-content: space-around;
+	padding: 10px;
+	a {
+		padding: 0px 20px;
+	}
+}
+
+.mainheader {
+	background-image: url(../images/header-image.jpg);
+}
+
+.headercaption {
+	margin: 0 auto;
+	text-align: center;
+}
+
+.headerText {
+	color: #fffff5;
+	margin: 0 auto;
+	padding-top: 35vh;
+
+	h1,
+	p {
+		text-transform: uppercase;
+	}
+	h1 {
+		font-size: 4rem;
+		border-bottom: 3px solid #fffff0;
+		display: inline-block;
+	}
+
+	p {
+		padding: 25px 0 30vh 0;
+		font-size: 1.5rem;
+
+	}
+}
+
+.readmorebtn {
+	transition: all 0.3s ease-in-out;
+	&:hover {
+	transform: translateY(-10px);
+		
+	}
+}
+.readmorebtn a {
+	padding: 5px;
+	color: #fffff5;
+	font-weight: 400;
+	letter-spacing: 1px;
+	color: white;
+	font-size: 1.5rem;
+}
+// BUTTON EXAMPLES
+
+
+// / MAIN SECTION AREA--------------------
+
+// BEGINS _-------------
+.services {
+	margin: 0 auto;
+	max-width: 80%;
+}
+.subtitle {
+	text-align: center;
+	margin: 10vh;
+
+}
+
+.subtitle h2 {
+	letter-spacing: 1.5px;
+	text-transform: uppercase;
+}
+
+.subtitle p {
+	margin: 0 auto;
+	padding: 35px;
+	font-size: 15px;
+	letter-spacing: 1px;
+	max-width: 50%;
+}
+
+
+.icon {
+	display: inline-block;
+	width:20%;
+	color: gray;
+	border-bottom: dashed 2px gray;
+	padding-bottom: 10px;
+	font-size: 20px;
+}
+
+
+.services-container  {
+	display:flex;
+}
+
+.serviceContent,
+.pricesList {
+	margin: 0 auto;
+	text-align: center;
+	padding: 20px;
+}
+
+.serviceContent {
+	max-width: 300px;
+	height: auto;
+	margin-bottom: 40px;
+	h2 {
+		padding :40px 0 20px 0;
+		font-size: 1.2rem;
+	}
+	p {
+		color: #999999;
+		font-size:0.8rem;
+	}
+	&:hover img{
+		transform: translateY(-5px);
+	}
+	&:hover h2 {
+		color: #828282;
+	}
+
+}
+
+
+
+.serviceContent img{
+	border-radius: 50%;
+	width: 100%;
+	transition: 0.3s ease-in-out;
+	&:hover {
+	}
+}
+
+
+
+
+
+// WEEKLY HOURS SECTION BEGINS
+
+
+.shophours,
+.customerReviews {
+	margin: 20px 0 20px 0;
+	padding: 20px 0;
+}
+
+.shophours{
+	background-image: url(../images/shophours-background.jpg);
+
+}
+
+.hours,
+.customerReviews {
+	color: $secondary;
+}
+
+.day-hours {
+	display: flex;
+	flex-wrap:wrap;
+	justify-content: center;
+	margin-top: 200px;
+}
+
+.daysContent {
+	text-align: center;
+	border: solid 1px $secondary ;
+	color: $secondary;
+	padding: 40px;
+	margin: 10px;
+	transition: .3s ease;
+		border-radius: 2%;
+
+		h3 {
+		text-transform: uppercase;
+		}
+}
+
+.daysContent:hover {
+	background-color: $secondary;
+	h3, ul {
+		color: #424242;
+	}
+}
+
+
+// WEEKLY HOURS END
+// PRICING SECTION BEGINS
+
+.priceContainer {
+	display: flex;
+	flex-direction: row;
+	flex-wrap:wrap;
+	justify-content: center;
+	margin-bottom: 10vh;
+
+}
+
+.pricesList {
+	margin: 10px;
+	width: 300px;
+	padding: 40px;
+	border: solid 1px black;
+	transition: 0.3s ease-in-out;
+	border-radius: 2%;
+
+	h2 {
+		font-size: 1.4rem;
+	}
+	.actualPrice {
+		font-weight: 400;
+		font-size: 1.8rem;
+		margin: 10px;
+	}
+	&:hover {
+		transform: translateY(-15px);
+		h2{
+			color: gray;
+		}
+
+	}
+}
+// PRICING SECTION ENDS
+// REVIEWS SECTION BEGINS
+.customerReviews {
+	background-color: #232323;
+}
+.gallery {
+	display: flex;
+}
+
+.customerContainer {
+	display: flex;
+	flex-direction:row;
+}
+
+.customerThoughts img{
+	 border-radius: 50%;
+}
+
+.customerThoughts {
+	display: flex;
+	flex-direction: column;
+	max-width: 100%;
+	border-radius: 20px;
+	margin: 10px;
+	background-color: #fff9;
+	padding: 10px;
+}
+
+
+// MEDIA QUERIES
+
+@media (max-width: 1265px) {
+	.main-nav a{
+		display: none;
+		font-size: 1.1rem;
+	}
+	.daysContent {
+		font-size: 0.8rem;
+		padding: 20px;
+		margin: 5px;
+	}
+}
+@media (max-width: 750px) {
+
+	.services-container {
+	flex-wrap:wrap;
+	flex-direction:row;
+	flex-shrink: 1;
+	align-items: center;
+	}
+	.subtitle p{
+	padding:20px 0 20px 0;
+	font-size: 0.7rem;
+	text-align: center;
+	width: 100%;
+}
+	.subtitle h2{
+	font-size: 1rem;
+
+	}
+
+}
+
+// MOBILEEEEE
+@media (max-width: 376px) {
+	.subtitle p{
+	padding:20px 0 20px 0;
+	font-size: 0.7rem;
+	text-align: center;
+	width: 100%;
+}
+	.subtitle h2{
+	font-size: 1rem;
+
+	}
+	.services-container {
+		padding: 20px;
+		display: flex;
+		flex-wrap:wrap;
+		width: auto;
+		justify-content:center;
+	}
+}

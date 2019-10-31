@@ -1,0 +1,464 @@
+oo<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Cronus</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400i|Nunito:400,900" rel="stylesheet">
+  <link type="image/png" href="./assets/logos/favicon.png" rel="icon">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/2.1.2/jquery.smooth-scroll.min.js"></script>
+</head>
+
+<body>
+  <a href="#learnmore" class="skip-link">Skip to main content.</a> <!-- Accessibility skip link anchor -->
+  <header>
+    <div class="header-wrapper"> <!-- Start of Section 1: Header -->
+      <div class="flex-container vertical">  <!-- Header Main Flexbox: Column -->
+        <div class="flex-container horizontal">
+          <div class="logo-container"> <!-- First Row of Column: Logo, Navigation and Search/Country Content -->
+           <img src="./assets/logos/logo-cronus.png"  id="text" alt="Cronos logo is the letter C that has is repeated in four sizes from big to small.">
+          </div> 
+          <nav>
+           <ul> <!-- Main Navigation -->
+            <li><a href="#home">Home</a>
+              <div class="nav-hover"></div> <!-- Empty div for link hover -->
+            </li>
+            <li><a href="#about">About</a>
+              <div class="nav-hover"></div>
+            </li>
+            <li><a href="#services">Services</a>
+              <div class="nav-hover"></div>
+            </li>
+            <li><a href="#ourProject">Our Project</a>
+              <div class="nav-hover"></div>
+            </li>      
+            <li><a href="#page">Page</a>
+              <div class="nav-hover"></div>
+            </li>      
+            <li><a href="#blog">Blog</a>
+              <div class="nav-hover"></div>
+            </li>      
+            <li><a href="#contact">Contact</a>
+              <div class="nav-hover"></div>
+            </li>             
+          </ul>
+          </nav>
+          <div class="right-container"> <!-- Search, Country and Language -->
+            <i class="testing fas fa-search fa-2x"></i>
+            <div class="england"> <!-- England Flag SVG-->
+              <svg xmlns="http://www.w3.org/2000/svg" id="flag-icon-css-gb" viewBox="0 0 512 512">
+                <defs>
+                  <clipPath id="a">
+                    <path fill-opacity=".7" d="M250 0h500v500H250z"/>
+                  </clipPath>
+                </defs>
+                <g clip-path="url(#a)" transform="translate(-256) scale(1.024)">
+                  <g stroke-width="1pt">
+                    <path fill="#012169" d="M0 0h1000v500H0z"/>
+                    <path fill="#fff" d="M0 0v55.9L888.2 500H1000v-55.9L111.8.1H0zm1000 0v55.9L111.8 500H0v-55.9L888.2 0H1000z"/>
+                    <path fill="#fff" d="M416.7 0v500h166.6V0H416.7zM0 166.7v166.6h1000V166.7H0z"/>
+                    <path fill="#c8102e" d="M0 200v100h1000V200H0zM450 0v500h100V0H450zM0 500l333.3-166.7H408L74.5 500H0zM0 0l333.3 166.7h-74.5L0 37.3V0zm592.1 166.7L925.5 0h74.5L666.7 166.7H592zm408 333.3L666.6 333.3h74.5L1000 462.7V500z"/>
+                  </g>
+                </g>
+              </svg>
+            </div>
+            <a href="#language">EN</a> <!-- Language -->
+          </div>
+        </div>
+        <div class="flex-container horizontal" > <!-- Second Row of Middle Column: Contact, Headers and Date? -->
+          <div class="left-middle"> <!-- Contact -->
+            <p>info@moontheme.net</p>
+            <p>+3423 4455 3333</p>
+           </div>
+          <div class="mid-middle"> <!-- Headers -->
+            <h1>We provide the best<span class ="italics"> service</span> for business</h1>
+            <h3>Business Communication is the sharing</h3>
+            <a href="#learnmore">Explore more</a>
+          </div>
+          <div class="right-middle"> <!-- Date -->
+            <p class="strikethrough">01</p> <!-- Strikethrough -->
+            <p>02</p>
+            <p>03</p>
+          </div>
+        </div>
+        <div class="scroll"> <!-- Third Row of Second Column: Scroll-->
+          <i class="fade1 fas fa-circle"></i>
+          <i class="fade2 fas fa-circle"></i>
+          <i class="fas fa-circle"></i>
+          <p>Scroll</p>
+        </div>
+      </div>    
+    </div>
+  </header> <!-- End of Section 1: Header -->
+  
+  <main id="learnmore"> <!-- Start of Main content -->
+    <section id="ourProject" class="our-projects"> <!-- Start of Section 2: Our Projects -->
+      <div class="section-heading-wrapper">
+        <h3 class="color-pink section-title">Our projects</h3>
+        <h2>Discover the <span class="italics">most fascinating</span> projects for our clients</h2>
+        <p class="italics">Veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fiigit</p>
+      </div>
+      <div class="filter"> <!-- Projects Photo Filtering -->
+        <ul>
+          <li><a class="no-hover" href="#filter">All</a></li>  <!-- This element has hover state as default -->
+          <li><a href="#filter">Consulting</a></li>
+          <li><a href="#filter">Finance</a></li>
+          <li><a href="#filter">Marketing</a></li>
+        </ul>
+      </div> <!-- End of photo filtering -->
+      <div class="gallery-container"> <!-- Start of the Gallery --> 
+        <ul class="gallery"> 
+          <li> 
+            <figure>
+              <img src="./assets/image-4.jpeg" alt="Hands raised in the air with paint on them."> 
+              <figcaption> <!-- Only visible on hover state -->
+                <div class= "plus"></div> <!-- Empty Element to create a plus in the div -->
+                <h3>Branding Marketing</h3>
+                <p>Magni dolores eos qui ratione</p>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="large-image">
+            <figure>
+              <img src="./assets/image-5.jpeg" alt="Blank cup of coffee held in one hand.">
+              <figcaption>
+                <div class= "plus"></div>
+                <h3>Branding Marketing</h3>
+                <p>Magni dolores eos qui ratione</p>
+              </figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <img src="./assets/image-6.jpeg" alt="A hand coming out of a box with colored pencils.">
+              <figcaption>
+                <div class= "plus"></div>
+                <h3>Branding Marketing</h3>
+                <p>Magni dolores eos qui ratione</p>
+              </figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <img src="./assets/image-7.jpeg" alt="A girl standing with confetti floating around her.">
+              <figcaption>
+                <div class= "plus"></div>
+                <h3>Branding Marketing</h3>
+                <p>Magni dolores eos qui ratione</p>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="large-image">
+            <figure>
+              <img src="./assets/image-8.jpeg" alt="A turquoise wall planter on a turquoise wall with flowers in it.">
+              <figcaption>
+                <div class= "plus"></div>
+                <h3>Branding Marketing</h3>
+                <p>Magni dolores eos qui ratione</p>
+              </figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <img src="./assets/image-9.jpeg" alt="A girl taking a photograph.">
+              <figcaption>
+                <div class= "plus"></div>
+                <h3>Branding Marketing</h3>
+                <p>Magni dolores eos qui ratione</p>
+              </figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <img src="./assets/image-10.jpeg" alt="A girl surrounded by purple smoke.">
+               <figcaption>
+                <div class= "plus"></div>
+                <h3>Branding Marketing</h3>
+                <p>Magni dolores eos qui ratione</p>
+              </figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <img src="./assets/image-11.jpeg" alt="A man walking with a suitcase.">
+              <figcaption>
+                <div class= "plus"></div>
+                <h3>Branding Marketing</h3>
+                <p>Magni dolores eos qui ratione</p>
+              </figcaption>
+            </figure>
+          </li>
+        </ul>
+      </div>  <!-- End of the Gallery --> 
+    </section> <!-- End of Section 2: Our Projects -->
+
+    <section id="page" class="our-expert"> <!-- Start of Section 3: Our Expert -->
+      <div class="section-heading-wrapper">
+        <h3 class="color-pink section-title">Our expert</h3>
+        <h2>Our team of experienced professionals to <span class="italics">get fast profit</span></h2>
+        <p class="italics">Veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fiigit</p>
+      </div>
+      <div class="expert-container">  
+        <ul class="expert-gallery"> <!-- Start of the Experts Gallery --> 
+          <li>
+            <figure> <!-- First Expert -->
+              <img src="./assets/image-12.jpg" alt="Joht Herry, CEO of Cronus Business">
+              <figcaption class="social-hover"> <!-- Only visible on hover state -->
+                <div class="social"> <!-- Flex container for the social links - consider removing ul for simplicity -->
+                    <a href="#facebook">
+                      <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#twitter">
+                      <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#googleplus">
+                      <i class="fab fa-google-plus-g"></i>
+                    </a>
+                    <a href="#instagram">
+                      <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+              </figcaption>
+            </figure>
+            <h3 class="color-pink">Joht Herry</h3> <!-- Name and Position always under the photos -->
+            <p class="italics">CEO Cronus Business</p> 
+          </li>
+          <li class="center-image">
+            <figure> <!-- Second Expert -->
+              <img src="./assets/image-13.jpg" alt="Hellen Marry, creative director of Cronus Business">
+              <figcaption class="social-hover">
+                <div class="social">
+                    <a href="#facebook">
+                      <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#twitter">
+                      <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#googleplus">
+                      <i class="fab fa-google-plus-g"></i>
+                    </a>
+                    <a href="#instagram">
+                      <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+              </figcaption>
+            </figure>
+            <h3 class="color-pink">Hellen Marry</h3>
+            <p class="italics">Creative director</p>
+          </li>
+          <li>
+            <figure>  <!-- Third Expert -->
+              <img src="./assets/image-14.jpg" alt="David Jame, business manager of Cronus Business">
+              <figcaption class="social-hover">
+                <div class="social"> <!-- Flex container for the social links -->
+                    <a href="#facebook">
+                      <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#twitter">
+                      <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#googleplus">
+                      <i class="fab fa-google-plus-g"></i>
+                    </a>
+                    <a href="#instagram">
+                      <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+              </figcaption>
+            </figure>
+            <h3 class="color-pink">David jame</h3>
+            <p class="italics">Business Manager</p> 
+          </li>
+        </ul>
+      </div>
+      <div class="score"> <!-- Start of the score section -->
+        <ul>
+          <li class="score-section">
+            <h3>Marketing Online</h3>
+            <p class="grey">75%</p>
+            <div class="score-bar"> <!-- Empty div for gray background -->
+              <div class="marketing score-color"></div> <!-- Empty div for gradient bar effect -->
+            </div>
+          </li>
+          <li class="score-section">
+            <h3>Design Consultant</h3>
+            <p>85%</p>
+            <div class="score-bar">
+              <div class="design score-color"></div>
+            </div>
+          </li>
+          <li class="score-section">
+            <h3>Deliver Business</h3>
+            <p>68%</p>
+            <div class="score-bar">
+              <div class="deliver score-color"></div>
+            </div>
+          </li>
+          <li class="score-section">
+            <h3>Field Manager</h3>
+            <p>80%</p>
+            <div class="score-bar">
+              <div class="field score-color"></div>
+            </div>
+          </li>
+        </ul>
+      </div> <!-- End of the score section -->
+    </section> <!-- End of Section 3: Our Expert -->
+
+    <section id="blog" class="blog-background"> <!-- Start of Section 4: Blog & News -->
+      <div class="blog-news"> <!-- Blog & News wrapper -->
+        <div class="blog-news-heading-wrapper">
+          <h3 class="color-pink section-title">Blog &amp news</h3>
+          <h2>Keep always updated <span class="italics">with our fresh</span> blog posts</h2>
+        </div>
+        <div class="blog-post"> <!-- Blog post wrapper -->
+          <ul> <!-- Start of the Blog -->
+            <li> <!-- First Blog Post -->
+              <div class="top-blog">
+                <img src="./assets/image-15.jpg" alt="Woman sitting at a computer with an open design on it.">
+              </div>
+              <div class="bottom-blog">
+                <div class="bottom-blog-wrapper">
+                  <h3 class="color-pink">August 6, 2017</h3>
+                  <a href="#blogpost1"><h2>Facilisis rutrum aenean</h2></a>
+                  <p>In eros a justo facilisis rutrum. Aenean id ullamcorper libero. Vestibulum imperdiet</p>
+                  <div class="writer"> <!-- Bottom of blog flex container -->
+                    <div class="photo"> <!-- Author image container -->
+                      <img class="first-author" src="./assets/image-18.jpg" alt="Author of article, John kook.">
+                    </div>
+                    <h3 class="by-who">By Jont kook</h3> <!-- Author name -->
+                  </div>
+                </div>
+              </div>
+            </li> 
+            <li class="center-image"> <!-- Second Blog Post -->
+              <div class="top-blog"> <!-- This image is 1px smaller. does weird things when inspected. -->
+                <img src="./assets/image-16.jpg" alt=" Man writing in a notebook beside an open computer.">
+              </div>
+              <div class="bottom-blog">
+                <div class="bottom-blog-wrapper">
+                  <h3 class="color-pink">August 6, 2017</h3>
+                  <a href="#blogpost2"><h2>Donec faucibus erat</h2></a>
+                  <p>Nunc in eros a justo facilisis rutru Aenean id ullamcorper libero</p>
+                  <div class="writer">
+                    <div class="photo">
+                      <img class="second-author" src="./assets/image-19.jpg" alt="Author of article, John kook.">
+                    </div>
+                    <h3 class="by-who">By Jont kook</h3>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li> <!-- Third Blog Post -->
+              <div class="top-blog"> 
+                <img src="./assets/image-17.jpg" alt="A group of people discussing notes on a paper beisde an open computer.">
+              </div>
+              <div class="bottom-blog">
+                <div class="bottom-blog-wrapper">
+                  <h3 class="color-pink">August 6, 2017</h3>
+                  <a href="#blogpost3"><h2>Aenean id ullamcorper</h2></a>
+                  <p>Facilisis rutrum aenean id ullamcorper libero. Vestibulum imperdiet nibh vel</p>
+                  <div class="writer"> 
+                    <div class="photo">
+                      <img class="third-author" src="./assets/image-20.jpg" alt="Author of article, John kook.">
+                    </div>
+                    <h3 class="by-who">By Jont kook</h3>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul><!-- End of the Blog -->
+        </div>  <!-- End of Blog Post wrapper -->
+      </div> <!-- End of Blog & News wrapper -->
+    </section> <!-- End of Section 4: Blog & News -->
+  </main> <!-- End of Main content -->
+  
+  <footer id="contact"> <!-- Start of Section 5: Footer -->
+    <div class="footer-wrapper"> <!-- Footer wrapper to set the maximum width of the footer -->
+      <div class="footer-flex"> <!-- Start of the flex container for the top half of the footer -->
+        <div class="left"> <!-- Start of the container for the left column of the footer -->
+          <div class="footer-logo">
+            <img src="./assets/logos/logo-cronus.png" alt="Cronos logo is the letter C that has is repeated in four sizes from big to small.">
+          </div>
+          <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explkabo. Nemo enim ipsam</p>
+          <p class="uppercase">Business Address</p>
+          <h4>London Oxford Street, 012 United Kingdom.</h4>
+          <div class="footer-contact"> <!-- Container to split contact info into two columns -->
+            <div class="half">
+              <p class="uppercase">Business phone:</p>
+              <h4>+032 3456 7890</h4>
+            </div>
+            <div class="half">
+              <p class="uppercase">Business email:</p>
+              <h4>Business@moontheme.net</h4>
+            </div>
+          </div>
+          <div class="footer-social"> <!-- Social media container in the left column of footer -->
+            <a href="#facebook">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#twitter">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#googleplus">
+              <i class="fab fa-google-plus-g"></i>
+            </a>
+            <a href="#instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+         </div>
+        </div><!-- End of the container for the left column of the footer -->
+        
+        <div class="center"> <!-- Start of the container for the center column of the footer -->
+          <h3 class="footer-title">Twitter feed</h3>
+          <a class="twit-handle" href="#twitter">
+            <div class="center-social"> <!-- Twitter logo and handle -->
+              <i class="fab fa-twitter"></i>
+              <div class="twitter-lineup">
+                <h3 >Commodo ultricies</h3>
+                <p class="uppercase">@Moontheme</p>
+              </div>
+            </div>
+          </a>
+          <p>Nam ac elit a ante commodo tristique. Condimentum a vehicula a, hendrerit ac nisi Lorem ipsum dolor</p>
+          <a href="#shortlink">http://t.con/3lG2RTn3</a>
+          <div class="clock-date"> <!-- Image of a clock for the date -->
+             <i class="far fa-clock"></i>
+             <p>Sep. 29, 2017</p>
+          </div> 
+        </div> <!-- End of the container for the center column of the footer -->
+        
+        <div class="right"> <!-- Start of the container for the right column of the footer -->
+           <h3 class="footer-title">Opening hours</h3>
+          <p>Arthitecto beatae vitae dicta sunt ipsam voluptatem quia voluptas sit aspematur</p>
+          <div class="store-hours"> <!-- Flex container to split up the hours of operations -->
+            <h4>mon - tues:</h4>
+            <h4>6:00 am - 10:00 am</h4>
+            <h4>wednes - thurs:</h4>
+            <h4>8:00 am - 6:00 pm</h4>
+            <h4>fri:</h4>
+            <h4>3:00 pm - 8:00 pm</h4>
+            <h4>sun:</h4>
+            <h4>closed</h4>
+          </div>
+        </div> <!-- End of the container for the right column of the footer -->
+      </div> <!-- End of the flex container for the top half of the footer -->
+    </div> <!-- End of Footer wrapper -->
+    <p class="copyright">Copyright &copy; Cronus - all rights reserved. Made by Moontheme</p>
+  </footer> <!-- End of Section 5: Footer -->
+ 
+  <script> /* Script to make the scroll transition better */
+    $(function() {
+        $('a').smoothScroll({
+            offset: 100
+        });
+    });
+  </script>
+
+</body>
+</html>

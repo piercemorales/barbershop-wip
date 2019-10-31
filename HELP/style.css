@@ -1,0 +1,908 @@
+
+
+/***************************************************************************/
+/*      LEGEND                                                             */
+/*      HIGHLIGHT AND USE USE CTRL + F + ENTER TO SKIP TO EACH SECTION     */ 
+/*                                                                         */
+/*                                                                         */
+/*      SETUP!                                                             */
+/*      Style Guide                                                        */
+/*      General Settings of Elements and Sections...and Stylistic Sugar!   */
+/*      Section 1: Header                                                  */
+/*      Section 2: Our Projects                                            */
+/*      Section 3: Our Expert                                              */
+/*      Section 4: Blog & News                                             */
+/*      Section 5: Footer                                                  */
+/*                                                                         */
+/***************************************************************************/
+
+
+
+
+/*********************************** Setup! *********************************************/
+
+html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}button,html [type=button],[type=reset],[type=submit]{-webkit-appearance:button}button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details,menu{display:block}summary{display:list-item}canvas{display:inline-block}template{display:none}[hidden]{display:none}
+
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
+
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+.visuallyhidden:not(:focus):not(:active) {position: absolute;width: 1px;height: 1px;margin: -1px;border: 0;padding: 0;white-space: nowrap;clip-path: inset(100%);clip: rect(0 0 0 0);overflow: hidden;}
+
+
+/************************************ Style Guide *********************************************/
+
+/*
+Fonts
+Nunito (Google Fonts)
+Libre Baskerville (Google Fonts)
+font-family: 'Nunito', sans-serif;  font-weight: 400 or 900
+font-family: 'Libre Baskerville', serif; font-style: italic;
+Icons
+Font Awesome
+
+Colours
+Purple #6e45e2 hsla(256, 73%, 58%, 0.5)
+Pink #ed145b   hsla(340, 86%, 50%, 0.7)
+Blue #0d4ef7   hsla(223, 60%, 50%, 0.3)
+Black #171717
+Grey #f1f8fc
+*/
+
+:root {  /* Playing around with Global Variables */
+ --purple: #6e45e2;
+ --pink: #ed145b;
+ --blue: #0d4ef7;
+ --black: #171717;
+ --lightgrey: #f1f8fc;
+ --grey: #b9b9b9;
+}
+
+
+/************************* General Settings of Elements and Sections...and Stylistic Sugar! *************************/
+
+html {
+  font-size: 62.5%;
+} 
+
+body {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 400;
+}
+
+ul, li,
+h1, h2, 
+h3, h4, 
+h5, h6,
+figure,
+p {
+  padding: 0;
+  margin: 0;
+} 
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+img {
+  display: block;
+  width: 100%; 
+  object-fit: cover; 
+}
+
+h1 {
+  font-size: 6rem;
+}
+
+h2 {
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+h3 {
+  position: relative;
+  font-size: 1.2rem;
+  margin-top: 10px;
+  text-transform: uppercase;
+}
+
+h4 {
+  font-size: 1.25rem;
+  line-height: 2.25rem;
+  font-weight: 600;
+  margin-bottom: 2%;
+}
+
+p {
+  font-size: 1.25rem;
+  color: var(--grey);
+}
+
+.color-pink {
+  color: var(--pink);
+  margin-bottom: 1%;
+}
+
+.bold {
+  font-size: 1.4rem;
+  color: #fff;
+}
+
+.italics {
+  font-family: 'Libre Baskerville', serif;
+  font-style: italic;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.section-heading-wrapper {
+  width: 40%;
+  text-align: center;
+  margin-bottom: 1%;
+}
+  
+.section-heading-wrapper h2 {
+  margin-bottom: 2%;
+  padding: 0 20%;
+}
+
+.section-heading-wrapper p {
+  padding: 0 10%;
+}
+
+.header-wrapper, /* Margin Wrapper to Center various sections */
+.section-heading-wrapper, 
+.our-projects,
+.score,
+.blog-news,
+.bottom-blog-wrapper,
+.third, 
+.footer-wrapper {
+  margin: 0 auto;
+}
+
+.flex-container,
+.mid-middle,
+.scroll,
+.copyright {
+  text-align: center;
+}
+
+.nav-hover,
+.section-title:before,
+.strikethrough:before,
+.plus:before,
+.plus:after {
+  content: '';
+  position:absolute;
+}
+
+.nav-hover,
+.section-title:before,
+.plus:before,
+.plus:after {
+  width: 2px;
+}
+
+.section-title:before { 
+  background-color: #989898;
+  top: -50px;
+  bottom: 30px;
+  display: block;
+}
+
+.section-title:before,
+.nav-hover,
+.strikethrough:before,
+.plus:before,
+.plus:after  {
+ left: 50%;
+}
+
+.plus:before,
+.plus:after { 
+  background-color: #fff;
+  top: 33%;
+  bottom:57%;
+ }
+
+.plus:after { 
+  transform: rotate(90deg);
+ }
+
+.skip-link {  /* Accessibility skip link button */
+  position: absolute;
+  left: -1000px;
+  top: 5px;
+  z-index: 999;
+  background: #FFF;
+  color: #FFF;
+  padding: 20px 40px;
+  background: var(--purple);
+}
+
+.skip-link:focus {   /* Accessibility skip link button centered while in focus */
+  left: 45.5%;
+}
+
+
+/************************************ Section 1: Header *********************************************/
+
+header {
+  background-image: linear-gradient(45deg, hsla(223, 60%, 50%, 0.3) 20%, 
+          hsla(256, 73%, 58%, 0.5) 66%, hsla(340, 86%, 50%, 0.7)), 
+          linear-gradient(rgba(250,250,250, 0.5), rgba(250,250,250, 0.5)), 
+          url('./assets/image-1.jpeg');
+  color: #FFF;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  margin-bottom: 2%;
+}
+
+header p {
+  color: #fff;
+  font-style: normal;
+}
+
+.header-wrapper {
+  width: 90%;
+  padding-top: 50px;
+}
+
+.flex-container {
+  display: flex;
+  justify-content:space-between;
+}
+
+.horizontal {
+  flex-direction:row;
+  align-items: center;
+  width: 100%;
+}
+
+.vertical {
+  flex-direction:column;
+}
+
+.vertical:nth-child(2) {  
+  margin-top: 20vh;
+}
+
+.horizontal:nth-child(2) {
+  margin-top: 20vh;
+}
+
+.logo-container {
+  display: inline-block;
+  min-width: 125px;
+}
+
+.nav-hover {  /*Link hover code*/
+  background-color: rgba(250,250,250, 0.5);
+  top: -55px;
+  bottom: 45px;
+display: none;
+}
+
+nav ul {
+  padding-left: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul li {
+  position: relative;
+  margin-right:40px;
+  list-style: none;
+}
+
+nav ul li:last-child {
+  margin:0;
+}
+
+nav ul li a {
+ padding: 10px 5px;
+}
+
+nav ul li:hover .nav-hover,
+nav ul li:active .nav-hover {
+  display: block;
+}
+
+.right-container {
+ display: flex;
+ flex-direction: row;
+ align-items: center;
+ justify-content: space-between;
+ color: #FFF;
+} 
+
+.right-container a {
+  font-weight: 400;
+} 
+
+.right-container i {
+  margin-right: 35px;
+}
+
+.right-container svg {
+  margin-right: 15px;
+  width: 20px;
+  border: 1px #FFF solid;
+  border-radius: 20px;
+} 
+
+.left-middle {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  transform: rotate(180deg);
+}
+
+.mid-middle {
+  margin: 0 28%;
+}
+
+.mid-middle a,
+.center-flex a {
+  margin-top: 50px;
+  text-transform: uppercase;
+  padding: 20px 40px;
+  background: var(--purple);
+  border-radius: 30px;
+}
+
+.right-middle p {
+  padding: 5px 0;
+}
+
+.strikethrough {
+  position: relative;
+}
+
+.strikethrough:before { /* Additional element styles in Stylistic Sugar*/
+  width:1px;
+  background: #fff;
+  top: 0;
+  bottom: 0;
+  transform: rotate(45deg);
+}
+
+.scroll {  /* Rotating the Scroll Div */
+  align-self: center;
+  margin-top: 16%;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  transform: rotate(180deg);
+}
+
+.scroll i {
+  margin-top: 5px;
+}
+
+.scroll p {
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-top: 8px;
+}
+
+.fade1 {
+  color: rgba(250,250,250,0.2);
+}
+
+.fade2 {
+  color: rgba(250,250,250, 0.5);
+}
+
+
+/************************************ Section 2: Our Projects *********************************************/
+
+.our-projects {
+  padding-top: 8%;
+  margin-bottom: 2%;
+}
+
+.filter ul {
+  margin-top: 1%;
+  display: flex;
+  justify-content: center;
+}
+
+.filter ul li {
+  justify-content: center;
+}
+
+.filter ul li a {
+  margin: 15px;
+  padding: 5px 20px;
+  color: var(--grey);
+  border-radius: 25px;
+}
+
+.filter ul li a:hover { /* large box shadow when you hover over the filter options */
+  margin: 15px;
+  padding: 5px 20px;
+  background: var(--pink);
+  color: #fff;
+  border-radius: 25px;
+  box-shadow: 3px 7px 38px 3px rgba(0,0,0,0.2);
+  transition: box-shadow;
+}
+
+ul li a.no-hover {  /* Wanted to add some box shadow to the All button as if it looked selected */
+  background: var(--pink);
+  color: #fff;
+  border-radius: 25px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.filter ul li:active a { /* box shadow transitions and tightens up to make it look like it has been selected */
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.gallery-container {
+  margin-top: 1%;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.gallery li {
+  width: 20%;
+  position: relative;
+}
+
+li.large-image {
+  width: 40%;
+}
+
+.gallery figcaption,
+.gallery figure:hover figcaption,
+.gallery figure:active figcaption {    
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  opacity: 0.8;
+}
+
+.gallery figcaption {
+  position: absolute;
+  background: var(--pink);
+  opacity: 0;
+  color: #fff;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transition: opacity 0.5s;
+  text-align: center;
+}
+
+.gallery figcaption p {
+  color: #fff;
+  margin-top: 1%;
+}
+
+
+/************************************ Section 3: Our Expert ********************************************/
+
+.our-expert {
+  padding-top: 8%;
+  margin-bottom: 2%;
+}
+
+.expert-container {
+  margin-top: 2%;
+}
+
+.expert-gallery {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5%;
+}
+
+.expert-gallery figure {
+  position: relative;  
+}
+
+.expert-gallery h3 {
+  font-size: 1.5rem;
+  text-transform: none;
+}
+
+.expert-gallery h3, 
+.expert-gallery p {
+  text-align: center;
+}
+
+.expert-gallery li {
+  max-width: 20%;
+  display: flex;
+  flex-direction: column;
+}
+
+.expert-gallery figure img {
+  border-radius: 15px;
+  height: 530px;   /* Sorry can't figure out how to make a proper size - Don't judge me */
+}
+
+.center-image {
+  margin: 0 20px;
+}
+
+.expert-gallery figure:hover figcaption {
+  opacity: 0.8;
+}
+
+.expert-gallery figcaption {
+  display: block;
+  position: absolute;
+  background: var(--pink);
+  opacity: 0;
+  color: #fff;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 15px;
+  transition: opacity 0.5s;
+}
+
+.social-hover {
+  padding: 0 60px;
+}
+
+.social {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 257.67px;
+}
+
+.social a {
+  padding: 10px;
+}
+
+.social i {
+  font-size: 1.75rem;
+  color: #FFF;
+  transition: all 0.5s;
+}
+
+.expert-gallery figcaption a:hover i { /* Adding a scale transition to the social media icons for some feedback */
+  transform: scale(2);
+}
+
+.score {
+  width: calc(60% + 40px);
+}
+
+.score ul {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 5%;
+}
+
+.score ul li {
+  width: 45%;
+  text-align: left;
+}
+
+.score p {
+  padding: 10px 0 0 75px;
+  color: #828282;
+}
+
+.score-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.marketing { 
+  width: 75%;
+}
+
+.design {
+  width: 85%;
+}
+
+.deliver {
+  width: 68%;
+}
+
+.field {
+  width: 80%;
+}
+
+.score-bar {    /*Background grey color for the bar*/
+  width: 100%;
+  height: 10px;
+  background: var(--lightgrey);
+  border-radius: 20px;
+  margin: 20px 0;
+}
+
+.score-color {    /* Adding the gradient to the score-bar */
+  height: 10px;
+  background: linear-gradient(to right, red, var(--blue));
+  border-radius: 20px;  
+}
+
+
+/************************************ Section 4: Blog & News ********************************************/
+
+.blog-background {
+  background: var(--lightgrey);
+  padding-top: 8%;
+  padding-bottom: 5%;
+}
+
+.blog-news {
+  width: calc(60% + 40px);
+}
+
+.blog-news-heading-wrapper{
+  width: 45%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.blog-post {
+  margin-top: 4%;
+}
+
+.blog-post ul {
+  display: flex;
+  flex-direction: row;
+}
+
+.blog-post ul li {
+  border-radius: 20px;
+  overflow: hidden;
+  transition: box-shadow 0.5s;
+}
+
+.blog-post ul li a {
+  color: rgba(0, 0, 0, 1);
+  transition: color 0.5s;
+}
+
+.blog-post ul li:hover {
+  box-shadow: 3px 7px 38px 3px rgba(0, 0, 0, 0.2);
+}
+
+.blog-post ul li:hover a {  /* Transition of the link text */
+  color: rgba(237, 20, 91, 1);
+}
+
+.bottom-blog-wrapper {
+  width: 80%;
+  text-align: left;
+}
+
+.bottom-blog {
+  background: #fff;
+}
+
+.bottom-blog h3 {
+  margin: 0;
+  padding: 10% 0;
+}
+
+.bottom-blog h2 {
+  padding: 0;
+  margin: 0 0 5%;
+  font-weight: 600;
+  font-size: 2.5rem;
+}
+
+.bottom-blog p {
+  padding: 0;
+  line-height: 2.25rem;
+  margin-bottom: 5%;
+}
+
+.writer {
+  display:flex;
+  align-items: center;
+  padding-bottom: 8%;
+}
+
+.photo {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.first-author,
+.second-author,
+.third-author {
+  display: inline;
+  position: absolute;
+}
+
+.first-author {
+  bottom: -10px;
+}
+
+.second-author {
+  bottom: -25px;
+  left: -1px;
+}
+
+.third-author {
+  left: -35px;
+  bottom: -10px;
+  height: 150%;
+  width: auto;
+}
+
+.by-who {
+  font-style: italic;
+  text-transform: none;
+}
+
+
+/************************************ Section 5: Footer ********************************************/
+
+footer {
+  background: var(--black);
+  padding-top: 5%;
+  color: #7B7B80;
+  position: relative;
+}
+
+footer h4,
+footer a {
+  font-weight: 400;
+}
+
+footer h3 {
+  margin: 0;
+}
+
+footer p,
+footer a {
+  font-size: 1.2rem;
+  line-height: 2.25rem;
+  color: #424242;
+  margin-bottom: 2%;
+  font-style: normal;
+}
+
+.footer-wrapper {
+  width: calc(60% + 40px);
+}
+
+.footer-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-title {
+  margin: 4% 0 10% 0;
+}
+
+.left {
+  margin-right: 5%;
+}
+
+.center {
+  margin-right: 5%;
+}
+
+.footer-logo {
+  width: 100px;
+  margin-bottom: 12%;
+}
+
+.footer-contact {
+  display: flex;
+}
+
+.half {
+  width: 50%;
+}
+
+.footer-social {
+  display: flex;
+}
+
+.footer-social a {
+  margin-top: 1%;
+  padding: 12px;
+}
+
+.footer-social a:first-child { /* Removes the left margin on the first social media icon only */
+  padding-left: 0;
+}
+
+.footer-social i {
+  font-size: 1.25rem;
+  color: #fff;
+}
+
+.twit-handle {
+  width: 100%;
+}
+
+.center-social {
+  display: flex;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  color: #fff;
+}
+
+.center-social i {
+  width: 8%;
+  margin-right: 10px;
+  margin-top: 6px;
+}
+
+.center-social h3 {
+  text-transform: none;
+}
+
+.twitter-lineup {
+  display: flex;
+  flex-direction: column;
+}
+
+.clock-date {
+  display: flex;
+  align-items: baseline; 
+}
+
+.clock-date p {
+  width: 100%;
+}
+
+.clock-date i {
+  margin-right: 10px;
+  transform: scale(-1, 1);
+}
+
+.copyright {
+  text-transform: capitalize;
+  margin-bottom: 0;
+  padding: 40px;
+}
+
+.store-hours {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 3%;
+}
+
+.store-hours h4 {
+  margin: 2% 0;
+  width: 50%;
+  text-transform: uppercase;
+}
+
+.store-hours h4:nth-of-type(2n) {
+  text-align: right;
+}
